@@ -7,26 +7,26 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		E8F94B5D2CA7980B0024E6BF /* AppByMyself.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppByMyself.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8F94B5D2CA7980B0024E6BF /* MyUIKitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyUIKitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		E8F94B6F2CA7980C0024E6BF /* Exceptions for "AppByMyself" folder in "AppByMyself" target */ = {
+		E8F94B6F2CA7980C0024E6BF /* Exceptions for "MyUIKitApp" folder in "MyUIKitApp" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = E8F94B5C2CA7980B0024E6BF /* AppByMyself */;
+			target = E8F94B5C2CA7980B0024E6BF /* MyUIKitApp */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		E8F94B5F2CA7980B0024E6BF /* AppByMyself */ = {
+		E8F94B5F2CA7980B0024E6BF /* MyUIKitApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				E8F94B6F2CA7980C0024E6BF /* Exceptions for "AppByMyself" folder in "AppByMyself" target */,
+				E8F94B6F2CA7980C0024E6BF /* Exceptions for "MyUIKitApp" folder in "MyUIKitApp" target */,
 			);
-			path = AppByMyself;
+			path = MyUIKitApp;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -45,7 +45,7 @@
 		E8F94B542CA7980B0024E6BF = {
 			isa = PBXGroup;
 			children = (
-				E8F94B5F2CA7980B0024E6BF /* AppByMyself */,
+				E8F94B5F2CA7980B0024E6BF /* MyUIKitApp */,
 				E8F94B5E2CA7980B0024E6BF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,7 +53,7 @@
 		E8F94B5E2CA7980B0024E6BF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E8F94B5D2CA7980B0024E6BF /* AppByMyself.app */,
+				E8F94B5D2CA7980B0024E6BF /* MyUIKitApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,9 +61,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E8F94B5C2CA7980B0024E6BF /* AppByMyself */ = {
+		E8F94B5C2CA7980B0024E6BF /* MyUIKitApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E8F94B702CA7980C0024E6BF /* Build configuration list for PBXNativeTarget "AppByMyself" */;
+			buildConfigurationList = E8F94B702CA7980C0024E6BF /* Build configuration list for PBXNativeTarget "MyUIKitApp" */;
 			buildPhases = (
 				E8F94B592CA7980B0024E6BF /* Sources */,
 				E8F94B5A2CA7980B0024E6BF /* Frameworks */,
@@ -74,13 +74,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				E8F94B5F2CA7980B0024E6BF /* AppByMyself */,
+				E8F94B5F2CA7980B0024E6BF /* MyUIKitApp */,
 			);
-			name = AppByMyself;
+			name = MyUIKitApp;
 			packageProductDependencies = (
 			);
 			productName = AppByMyself;
-			productReference = E8F94B5D2CA7980B0024E6BF /* AppByMyself.app */;
+			productReference = E8F94B5D2CA7980B0024E6BF /* MyUIKitApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -98,7 +98,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E8F94B582CA7980B0024E6BF /* Build configuration list for PBXProject "AppByMyself" */;
+			buildConfigurationList = E8F94B582CA7980B0024E6BF /* Build configuration list for PBXProject "MyUIKitApp" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -112,7 +112,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E8F94B5C2CA7980B0024E6BF /* AppByMyself */,
+				E8F94B5C2CA7980B0024E6BF /* MyUIKitApp */,
 			);
 		};
 /* End PBXProject section */
@@ -146,7 +146,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AppByMyself/Info.plist;
+				INFOPLIST_FILE = MyUIKitApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyUIKitApp;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -172,7 +173,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AppByMyself/Info.plist;
+				INFOPLIST_FILE = MyUIKitApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyUIKitApp;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -312,7 +314,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E8F94B582CA7980B0024E6BF /* Build configuration list for PBXProject "AppByMyself" */ = {
+		E8F94B582CA7980B0024E6BF /* Build configuration list for PBXProject "MyUIKitApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E8F94B732CA7980C0024E6BF /* Debug */,
@@ -321,7 +323,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E8F94B702CA7980C0024E6BF /* Build configuration list for PBXNativeTarget "AppByMyself" */ = {
+		E8F94B702CA7980C0024E6BF /* Build configuration list for PBXNativeTarget "MyUIKitApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E8F94B712CA7980C0024E6BF /* Debug */,
