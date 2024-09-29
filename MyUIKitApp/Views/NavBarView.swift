@@ -7,36 +7,46 @@
 
 import UIKit
 
-class HomePageNavBarView {
+class NavBarView {
     
     static func setupNavigationBar(for viewController: UIViewController,
+                                   title: String, // добавлен параметр для заголовка
                                    goToMessagesAction: Selector,
-                                   goToSettingsAction: Selector) {
-        // Настройка заголовка с левой стороны
-        let titleLabel = UILabel()
-        titleLabel.text = "Главная"
-        titleLabel.font = UIFont.systemFont(ofSize: 20, weight: .bold)
-        titleLabel.textColor = .black
+                                   goToNotificationsAction: Selector) {
+        
+        func createTitleLabel(withText text: String) -> UILabel {
+            let titleLabel = UILabel()
+            titleLabel.text = text
+            titleLabel.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+            titleLabel.textColor = .black
+            return titleLabel
+        }
+        
+        func createNotificationButton() -> UIBarButtonItem {
+            return UIBarButtonItem(
+                image: UIImage(systemName: "bell"),
+                style: .plain,
+                target: viewController,
+                action: goToNotificationsAction
+            )
+        }
+        
+        func createMessagesButton() -> UIBarButtonItem {
+            return UIBarButtonItem(
+                image: UIImage(systemName: "message"),
+                style: .plain,
+                target: viewController,
+                action: goToMessagesAction
+            )
+        }
+        
+        // Установка заголовка слева
+        let titleLabel = createTitleLabel(withText: title) // используем переданный заголовок
         viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: titleLabel)
         
-        // Кнопка 1 (например, переход на экран сообщений)
-        let button1 = UIBarButtonItem(
-            image: UIImage(systemName: "message"),
-            style: .plain,
-            target: viewController,
-            action: goToMessagesAction
-        )
-        
-        // Кнопка 2 (например, переход на экран настроек)
-        let button2 = UIBarButtonItem(
-            image: UIImage(systemName: "gearshape"),
-            style: .plain,
-            target: viewController,
-            action: goToSettingsAction
-        )
-        
-        // Добавляем обе кнопки справа
-        viewController.navigationItem.rightBarButtonItems = [button2, button1]
+        // Установка кнопок справа
+        let notificationButton = createNotificationButton()
+        let messagesButton = createMessagesButton()
+        viewController.navigationItem.rightBarButtonItems = [notificationButton, messagesButton]
     }
 }
-

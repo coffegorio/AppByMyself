@@ -38,7 +38,7 @@ class BaseStartScreenViewController: UIViewController {
             secondaryLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             secondaryLabel.widthAnchor.constraint(equalToConstant: screenWidth - 40),
             
-            imageView.topAnchor.constraint(equalTo: secondaryLabel.bottomAnchor, constant: screenHeight * 0.05),
+            imageView.topAnchor.constraint(equalTo: secondaryLabel.bottomAnchor, constant: screenHeight * 0.03),
             imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             imageView.widthAnchor.constraint(equalToConstant: screenWidth * 0.8),
             imageView.heightAnchor.constraint(equalTo: imageView.widthAnchor)

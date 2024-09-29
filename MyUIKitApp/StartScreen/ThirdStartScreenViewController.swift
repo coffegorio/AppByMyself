@@ -14,7 +14,7 @@ class ThirdStartScreenViewController: BaseStartScreenViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configure(mainText: "Кастомизируйте свой профиль",
-                  secondaryText: "Сделайте свой профиль уникальным! Выбирайте фото, настраивайте биографию...",
+                  secondaryText: "Сделайте свой профиль уникальным! Выбирайте фото, настраивайте биографию и указывайте интересы, чтобы другие пользователи могли лучше узнать вас. Персонализируйте внешний вид профиля с помощью цветовых тем и других элементов, чтобы он отражал ваш стиль.",
                   imageName: "profile")
         setupButton()
     }
@@ -28,7 +28,7 @@ class ThirdStartScreenViewController: BaseStartScreenViewController {
             startScreenButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20), // Отступ от левого края
             startScreenButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20), // Отступ от нижнего края
             startScreenButton.widthAnchor.constraint(equalToConstant: screenWidth * 0.4), // Ширина кнопки
-            startScreenButton.heightAnchor.constraint(equalToConstant: 50) // Высота кнопки
+            startScreenButton.heightAnchor.constraint(equalToConstant: 55) // Высота кнопки
         ])
         
         startScreenButton.addTarget(self, action: #selector(goHomeScreen), for: .touchUpInside)

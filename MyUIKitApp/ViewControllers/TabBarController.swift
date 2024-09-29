@@ -28,8 +28,8 @@ class TabBarController: UITabBarController {
         newPostNavController.tabBarItem = UITabBarItem(title: "Новый пост", image: UIImage(systemName: "plus"), tag: 1)
         profileNavController.tabBarItem = UITabBarItem(title: "Профиль", image: UIImage(systemName: "person"), tag: 2)
         settingsNavController.tabBarItem = UITabBarItem(title: "Настройки", image: UIImage(systemName: "gearshape"), tag: 3)
-        
+    
         setViewControllers([homeNavController, newPostNavController, profileNavController, settingsNavController], animated: false)
-        
     }
 }
+
