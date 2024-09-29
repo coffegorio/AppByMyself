@@ -14,7 +14,7 @@ class ThirdStartScreenViewController: BaseStartScreenViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configure(mainText: "Кастомизируйте свой профиль",
-                  secondaryText: "Сделайте свой профиль уникальным! Выбирайте фото, настраивайте биографию...",
+                  secondaryText: "Сделайте свой профиль уникальным! Выбирайте фото, настраивайте биографию и указывайте интересы, чтобы другие пользователи могли лучше узнать вас. Персонализируйте внешний вид профиля с помощью цветовых тем и других элементов, чтобы он отражал ваш стиль.",
                   imageName: "profile")
         setupButton()
     }
